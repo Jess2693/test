@@ -1,0 +1,23 @@
+<h2>Archived notes</h2>
+<table class="table table-striped">
+    <thead class="table-blue">
+        <tr>
+            <th> Title</th>
+            <th> Content</th>
+            <th> Last edited </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let note of notes">
+            <td>{{note.title}}</td>
+            <td>{{note.description}}</td>
+            <td>{{note.date}}</td>
+            <td>
+                <button (click)="updateNote(note.id)" class="btn btn-info" >Edit</button>
+                <button (click)="deleteNote(note.id)" class="btn btn-danger">Delete</button>
+                <button (click)="archivedNote(note.id,note)" class="btn btn-secondary">unarchived</button>
+    
+            </td>
+        </tr>
+    </tbody>
+</table>
