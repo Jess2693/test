@@ -7,5 +7,9 @@ Postgress 15.1
 Frontend:
 Angular 15.0.4
 
+# Run backend
+1. Open directory /backend 
+2. 
+
 
 
