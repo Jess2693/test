@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 <h2>My notes</h2>
 <table class="table table-striped">
     <thead class="table-blue">
@@ -13,10 +15,10 @@
             <td>{{note.description}}</td>
             <td>{{note.date}}</td>
             <td>
-                <button (click)="updateNote(note.id)" class="btn btn-info" >Edit</button>
-                <button (click)="deleteNote(note.id)" class="btn btn-danger">Delete</button>
-                <button (click)="seeDetailsNote(note.id)" class="btn btn-primary">Info</button>
-                <button (click)="archivedNote(note.id,note)" class="btn btn-secondary">Archive</button>
+                <button (click)="updateNote(note.id)" class="btn btn-info" > <i class="fas fa-edit"></i></button>
+                <button (click)="deleteNote(note.id)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                <button (click)="seeDetailsNote(note.id)" class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                <button (click)="archivedNote(note.id,note)" class="btn btn-secondary"> <i class="fas fa-archive"></i></button>
             </td>
         </tr>
     </tbody>
