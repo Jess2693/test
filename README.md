@@ -14,6 +14,7 @@ Frontend: Angular 15.0.4
 4. run comand $ java -jar notes-0.0.1-SNAPSHOT.jar
 5. The application will run on port 8080. Make sure this slot is not busy.
 
-# Run backend
-URL: 
+# Run frontend
+URL: https://notes-e40fe.web.app/notes 
+
 
